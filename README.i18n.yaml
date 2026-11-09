@@ -1,0 +1,19 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write README.md
+/sim-harness:
+  en: a43950ec19791a3e
+  zh: 87b3d2c126deda7c
+/sim-harness/developer-preview:
+  en: ef15c58f2626a35c
+  zh: fa3c3985c7916851
+/sim-harness/run-from-source:
+  en: 3eb061f79d32ae91
+  zh: b3a70b788ee988d7
+/sim-harness/development:
+  en: b27dfc47ca1d3080
+  zh: c0b94597ae01d8d0
+/sim-harness/upstream-and-license:
+  en: 612463a677e32753
+  zh: 0688305c579d2240

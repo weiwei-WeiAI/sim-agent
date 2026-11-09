@@ -1,0 +1,57 @@
+/** Simplified Chinese copy for the CAE interface page. */
+export const zh = {
+  panel: 'CAE MCP', subtitle: '查看软件配置与 MCP 连接，按需启动仿真软件',
+  refresh: '刷新状态', loading: '正在读取软件配置', loadError: '无法读取软件配置，请重试',
+  softwareCount: '软件', mcpCount: '已配置 MCP', connectedCount: 'MCP 已连接',
+  overview: '本机工作站',
+  unconfigured: '待配置路径', available: '路径可用', missing: '路径不可用',
+  launch: '一键启动', busy: '处理中…', configure: '配置', close: '关闭',
+  launchCommand: '启动命令', launchSettings: '软件启动', mcpDetails: 'MCP 详情', serverId: '服务标识', source: '项目来源', toolCount: '已发现工具',
+  mcpHeading: '已配置的 MCP', noMcps: '尚未配置 MCP', noMcpsHint: '可先配置启动路径，后续再接入软件工具',
+  mcpConnected: '已连接', mcpDisabled: '未启用', mcpConnecting: '连接中', mcpFailed: '连接异常', mcpUnconfigured: '未注册',
+  tools: '个工具', bridge: '桥接端口',
+  provider: '维护方', official: '官方 MCP', community: '社区 MCP', connection: '接入方式', officialApis: '官方 API',
+  agentEnabled: '允许 Agent 启动', agentDisabled: '仅手动启动',
+  pathEmpty: '尚未设置软件启动文件', version: '软件版本', versionUnknown: '版本待配置', versionPlaceholder: '例如 2021',
+  executable: '启动文件路径', executableHint: '填写本机 .exe、.bat 或 .cmd 文件的完整路径',
+  executablePlaceholder: '例如 D:/SIMULIA/Commands/abq2021.bat',
+  args: '启动参数', argsHint: '每行一个参数；Abaqus 通常填写 cae',
+  argsPlaceholder: 'cae', cwd: '工作目录（可选）', cwdPlaceholder: '例如 D:/CAE/work',
+  allowAgent: '允许根据对话提示启动', allowAgentHint: 'Agent 只能使用这里保存的启动路径和参数',
+  save: '保存配置', cancel: '取消',
+  saved: '启动配置已保存', save_failed: '保存失败，请刷新后重试',
+  requested: '已发送启动请求，请在软件中确认启动结果', already_started: '启动进程仍在运行，已避免重复启动',
+  path_required: '请先配置软件启动路径', not_found: '未找到软件启动文件', invalid_path: '启动路径或参数格式不正确',
+  agent_disabled: '尚未允许 Agent 启动此软件', failed: '启动失败，请检查路径、参数与软件安装',
+  connectionNote: 'MCP 已连接表示工具服务可用；软件安装、许可证与 API 或桥接连接仍需另行验证',
+  promptTitle: '也可以在对话中启动', promptExample: '“打开 Abaqus，准备一个静力学分析模型”',
+}
+
+/** Locale keys owned by the CAE interface page. */
+export type CaeInterfaceLocaleKey = keyof typeof zh
+
+/** English copy for the CAE interface page. */
+export const en: Record<CaeInterfaceLocaleKey, string> = {
+  panel: 'CAE MCP', subtitle: 'Review application settings and MCP connections, and launch simulation software',
+  refresh: 'Refresh status', loading: 'Loading application settings', loadError: 'Unable to load applications. Please retry.',
+  softwareCount: 'Applications', mcpCount: 'Configured MCPs', connectedCount: 'Connected MCPs',
+  overview: 'Local workstation',
+  unconfigured: 'Path required', available: 'Path available', missing: 'Path unavailable',
+  launch: 'Launch application', busy: 'Working…', configure: 'Configure', close: 'Close',
+  launchCommand: 'Launch command', launchSettings: 'Application launch', mcpDetails: 'MCP details', serverId: 'Server ID', source: 'Project source', toolCount: 'Discovered tools',
+  mcpHeading: 'Configured MCPs', noMcps: 'No MCP configured', noMcpsHint: 'Set the launch path now and connect application tools later.',
+  mcpConnected: 'Connected', mcpDisabled: 'Disabled', mcpConnecting: 'Connecting', mcpFailed: 'Connection error', mcpUnconfigured: 'Not registered',
+  tools: 'tools', bridge: 'Bridge port', agentEnabled: 'Agent launch allowed', agentDisabled: 'Manual launch only',
+  provider: 'Maintainer', official: 'Official MCP', community: 'Community MCP', connection: 'Connection', officialApis: 'Official APIs',
+  pathEmpty: 'No application launcher selected', version: 'Application version', versionUnknown: 'Version not set', versionPlaceholder: 'For example, 2021',
+  executable: 'Launcher path', executableHint: 'Absolute path to a local .exe, .bat or .cmd file', executablePlaceholder: 'For example, D:/SIMULIA/Commands/abq2021.bat',
+  args: 'Launch arguments', argsHint: 'One argument per line; Abaqus normally uses cae.', argsPlaceholder: 'cae',
+  cwd: 'Working directory (optional)', cwdPlaceholder: 'For example, D:/CAE/work',
+  allowAgent: 'Allow launch from conversation requests', allowAgentHint: 'The Agent uses only the saved launcher and arguments.',
+  save: 'Save settings', cancel: 'Cancel', saved: 'Launch settings saved', save_failed: 'Save failed. Refresh and retry.',
+  requested: 'Launch requested. Confirm startup in the application.', already_started: 'The launcher is still active; no duplicate process was started.',
+  path_required: 'Configure the launcher path first.', not_found: 'Application launcher not found.', invalid_path: 'Check the launch path and argument format.',
+  agent_disabled: 'Agent launch is disabled for this application.', failed: 'Launch failed. Check the path, arguments and installation.',
+  connectionNote: 'A connected MCP means its tool service is available. Application installation, licensing and API or bridge connectivity require separate verification.',
+  promptTitle: 'Launch from a conversation', promptExample: '“Open Abaqus and prepare a static analysis model.”',
+}

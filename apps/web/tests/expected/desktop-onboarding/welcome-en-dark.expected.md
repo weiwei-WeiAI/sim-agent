@@ -1,0 +1,6 @@
+- region "Welcome to Sim Harness":
+  - heading "Welcome to Sim Harness" [level=1]:
+    - text: Welcome to
+    - emphasis: Sim Harness
+  - paragraph: Sim Harness works in a local folder and uses tools to read and write files on your computer. It can help you research and organize information, create documents and spreadsheets, write code, troubleshoot issues, and more.
+  - button "Get started"
